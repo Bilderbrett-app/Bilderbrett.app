@@ -1,0 +1,52 @@
+version: 2
+
+updates:
+  - package-ecosystem: "devcontainers"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "chore(deps): update"
+    commit-author:
+      name: "dependabot[bot]"
+
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "chore(deps): update"
+    commit-author:
+      name: "dependabot[bot]"
+      email: "dependabot[bot]@users.noreply.github.com"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "chore(deps): update"
+    commit-author:
+      name: "dependabot[bot]"
+      email: "dependabot[bot]@users.noreply.github.com"
+
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "chore(deps): update"
+    commit-author:
+      name: "dependabot[bot]"
+      email: "dependabot[bot]@users.noreply.github.com"
+
+  - package-ecosystem: "gitsubmodule"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "chore(deps): update"
+    commit-author:
+      name: "dependabot[bot]"
+      email: "dependabot[bot]@users.noreply.github.com"
+    
