@@ -31,6 +31,7 @@ jobs:
         with:
           eas-version: latest
           token: ${{ secrets.EXPO_TOKEN }}
+          packager: bun
 
       - name: Navigate to app directory
         run: cd app
@@ -39,4 +40,4 @@ jobs:
         run: bun install
 
       - name: Publish update
-        run: bux eas update --auto
+        run: bunx eas update --auto --non-interactive
