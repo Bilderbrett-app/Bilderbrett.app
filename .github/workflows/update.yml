@@ -18,9 +18,10 @@ jobs:
 
       - name: Setup Node
         uses: actions/setup-node@v4
+        
+      - uses: oven-sh/setup-bun@v1
         with:
-          node-version: 18.x
-          cache: yarn
+          bun-version: latest
 
       - name: Setup EAS
         uses: expo/expo-github-action@v8
@@ -29,7 +30,7 @@ jobs:
           token: ${{ secrets.EXPO_TOKEN }}
 
       - name: Install dependencies
-        run: yarn install
+        run: bun install
 
       - name: Publish update
         run: eas update --auto
