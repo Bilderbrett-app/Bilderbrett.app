@@ -1,12 +1,5 @@
-run = "sh bun.cfg/preload.sh && bun run start"
-onBoot = "sh bun.cfg/onBoot.sh"
-hidden=['bun.cfg', 'yarn.lock', 'package-lock.json']
-[env]
-PATH="/home/runner/.bun/bin"
+hidden = [".config", "bun.lockb"]
+modules = ["bun-1.1:v1-20240401-269b323"]
+
 [nix]
-channel = "stable-21_11"
-[packager]
-language = "nodejs"
-  [packager.features]
-  packageSearch = true
-  guessImports = false
+channel = "stable-23_11"
