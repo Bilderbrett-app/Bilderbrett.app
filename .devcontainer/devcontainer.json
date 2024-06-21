@@ -2,5 +2,14 @@
   "name": "Devcontainer",
   "build": {
     "dockerfile": "./Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "msjsdiag.vscode-react-native",
+        "oven.bun-vscode",
+        "expo.vscode-expo-tools"
+      ]
+    }
   }
 }

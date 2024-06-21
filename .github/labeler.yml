@@ -6,8 +6,8 @@
 # Add 'Type: Code' label to any change to src files within the source dir EXCEPT for the docs sub-folder
 "Type: Code":
   - changed-files:
-    - any-glob-to-any-file: "app/**/*"
-    - all-globs-to-all-files: "!app/docs/*"
+    - any-glob-to-any-file: "**/*"
+    - all-globs-to-all-files: "!docs/*"
 
 # Add 'Type: Feature' label to any PR where the head branch name starts with `feature` or has a `feature` section in the name
 "Type: Feature":
