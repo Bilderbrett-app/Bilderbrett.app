@@ -1,0 +1,249 @@
+- name: "Status: Pending"
+  color: '#FF0000'
+  description: "The task is pending and has not been started yet."
+  aliases: ["Pending", "Not Started"]
+
+- name: "Status: Blocked"
+  color: '#FF0000'
+  description: "The task is currently blocked by another task or issue."
+  aliases: ["Blocked"]
+
+- name: "Status: In Progress"
+  color: '#FF0000'
+  description: "The task is currently being worked on."
+  aliases: ["In Progress", "Ongoing"]
+
+- name: "Status: Completed"
+  color: '#00FF00'
+  description: "The task has been completed successfully."
+  aliases: ["Completed", "Done"]
+
+- name: "Status: Reviewed"
+  color: '#00FF00'
+  description: "The task has been reviewed."
+  aliases: ["Reviewed"]
+
+- name: "Status: Approved"
+  color: '#00FF00'
+  description: "The task has been approved."
+  aliases: ["Approved"]
+
+- name: "Status: Rejected"
+  color: '#FF0000'
+  description: "The task has been rejected."
+  aliases: ["Rejected"]
+
+- name: "Status: On Hold"
+  color: '#FFCC00'
+  description: "The task is currently on hold."
+  aliases: ["On Hold"]
+
+- name: "Status: Canceled"
+  color: '#FF0000'
+  description: "The task has been canceled."
+  aliases: ["Canceled"]
+
+- name: "Status: Ready for Review"
+  color: '#00FF00'
+  description: "The task is ready for review."
+  aliases: ["Ready for Review"]
+
+- name: "Status: Needs Testing"
+  color: '#FFCC00'
+  description: "The task needs to be tested."
+  aliases: ["Needs Testing"]
+
+- name: "Status: Under Review"
+  color: '#FFCC00'
+  description: "The task is currently under review."
+  aliases: ["Under Review"]
+
+- name: "Status: Stale"
+  color: '#CCCCCC'
+  description: "The task has not been updated for a long time."
+  aliases: ["Stale"]
+
+- name: "Type: Documentation"
+  color: '#0000FF'
+  description: "The task involves documentation."
+  aliases: ["Documentation"]
+
+- name: "Type: Feature"
+  color: '#0000FF'
+  description: "The task involves a new feature."
+  aliases: ["Feature"]
+
+- name: "Type: Issue"
+  color: '#0000FF'
+  description: "The task involves an issue."
+  aliases: ["Issue"]
+
+- name: "Type: Bug"
+  color: '#FF0000'
+  description: "The task involves a bug."
+  aliases: ["Bug"]
+
+- name: "Type: Enhancement"
+  color: '#0000FF'
+  description: "The task involves an enhancement."
+  aliases: ["Enhancement"]
+
+- name: "Type: Task"
+  color: '#0000FF'
+  description: "The task involves a generic task."
+  aliases: ["Task"]
+
+- name: "Type: Improvement"
+  color: '#0000FF'
+  description: "The task involves an improvement."
+  aliases: ["Improvement"]
+
+- name: "Type: Maintenance"
+  color: '#0000FF'
+  description: "The task involves maintenance."
+  aliases: ["Maintenance"]
+
+- name: "Type: Refactor"
+  color: '#0000FF'
+  description: "The task involves refactoring code."
+  aliases: ["Refactor"]
+
+- name: "Type: Discussion"
+  color: '#0000FF'
+  description: "The task involves a discussion."
+  aliases: ["Discussion"]
+
+- name: "Priority: Low"
+  color: '#00FF00'
+  description: "The task has low priority."
+  aliases: ["Low Priority"]
+
+- name: "Priority: Normal"
+  color: '#00FF00'
+  description: "The task has normal priority."
+  aliases: ["Normal Priority"]
+
+- name: "Priority: Medium"
+  color: '#FFCC00'
+  description: "The task has medium priority."
+  aliases: ["Medium Priority"]
+
+- name: "Priority: High"
+  color: '#FF0000'
+  description: "The task has high priority."
+  aliases: ["High Priority"]
+
+- name: "Priority: Critical"
+  color: '#FF0000'
+  description: "The task has critical priority."
+  aliases: ["Critical Priority"]
+
+- name: "Priority: Urgent"
+  color: '#FF0000'
+  description: "The task has urgent priority."
+  aliases: ["Urgent Priority"]
+
+- name: "Priority: Trivial"
+  color: '#00FF00'
+  description: "The task has trivial priority."
+  aliases: ["Trivial Priority"]
+
+- name: "Priority: Wishlist"
+  color: '#00FF00'
+  description: "The task is a wishlist item."
+  aliases: ["Wishlist"]
+
+- name: "Tag: First Contribution"
+  color: '#0000FF'
+  description: "The task is suitable for first-time contributors."
+  aliases: ["First Contribution"]
+
+- name: "Tag: Help Wanted"
+  color: '#0000FF'
+  description: "The task needs help from contributors."
+  aliases: ["Help Wanted"]
+
+- name: "Tag: Good First Issue"
+  color: '#0000FF'
+  description: "The task is a good first issue for new contributors."
+  aliases: ["Good First Issue"]
+
+- name: "Tag: Needs Discussion"
+  color: '#0000FF'
+  description: "The task needs further discussion."
+  aliases: ["Needs Discussion"]
+
+- name: "Tag: Needs Investigation"
+  color: '#0000FF'
+  description: "The task needs further investigation."
+  aliases: ["Needs Investigation"]
+
+- name: "Tag: Security"
+  color: '#FF0000'
+  description: "The task involves security."
+  aliases: ["Security"]
+
+- name: "Tag: Performance"
+  color: '#0000FF'
+  description: "The task involves performance."
+  aliases: ["Performance"]
+
+- name: "Tag: Accessibility"
+  color: '#0000FF'
+  description: "The task involves accessibility."
+  aliases: ["Accessibility"]
+
+- name: "Tag: CI/CD"
+  color: '#0000FF'
+  description: "The task involves Continuous Integration/Continuous Deployment."
+  aliases: ["CI/CD"]
+
+- name: "Tag: Dependency Update"
+  color: '#0000FF'
+  description: "The task involves updating dependencies."
+  aliases: ["Dependency Update"]
+
+- name: "Tag: Design"
+  color: '#0000FF'
+  description: "The task involves design aspects."
+  aliases: ["Design"]
+
+- name: "Tag: Duplicate"
+  color: '#CCCCCC'
+  description: "The task is a duplicate of another task."
+  aliases: ["Duplicate"]
+
+- name: "Tag: Needs Reproduction"
+  color: '#0000FF'
+  description: "The issue needs to be reproduced."
+  aliases: ["Needs Reproduction"]
+
+- name: "Tag: Needs More Info"
+  color: '#FFCC00'
+  description: "The task needs more information."
+  aliases: ["Needs More Info"]
+
+- name: "Tag: Won't Fix"
+  color: '#CCCCCC'
+  description: "The issue will not be fixed."
+  aliases: ["Won't Fix"]
+
+- name: "Tag: Work In Progress (WIP)"
+  color: '#0000FF'
+  description: "The task is a work in progress."
+  aliases: ["Work In Progress", "WIP"]
+
+- name: "Tag: Up for Grabs"
+  color: '#0000FF'
+  description: "The task is up for grabs by any contributor."
+  aliases: ["Up for Grabs"]
+
+- name: "Tag: Long-Term"
+  color: '#0000FF'
+  description: "The task is a long-term effort."
+  aliases: ["Long-Term"]
+
+- name: "Tag: Short-Term"
+  color: '#0000FF'
+  description: "The task is a short-term effort."
+  aliases: ["Short-Term"]
