@@ -8,6 +8,7 @@ const config = getDefaultConfig(__dirname);
 config.resetCache = true;
 config.resolver.unstable_enablePackageExports = true;
 config.resolver.unstable_enableSymlinks = true;
+config.resolver.sourceExts.push("mjs");
 
 config.cacheStores = ({ FileStore }) => [
   new FileStore({
