@@ -31,7 +31,7 @@ module.exports = function (api) {
           '@libp2p/websockets': '@libp2p/websockets/dist/index.min.js',
           '@libp2p/bootstrap': '@libp2p/bootstrap/dist/index.min.js',
           '@chainsafe/libp2p-noise': '@chainsafe/libp2p-noise/dist/index.min.js',
-          '@chainsafe/libp2p-yamux': '@chainsafe/libp2p-yam/dists/index.min.js',
+          '@chainsafe/libp2p-yamux': '@chainsafe/libp2p-yam/dist/index.min.js',
         }
       }],
       "react-native-reanimated/plugin"
