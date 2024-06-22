@@ -7,8 +7,10 @@ module.exports = function (api) {
         { jsxImportSource: "nativewind" }
       ],
       "@babel/plugin-transform-private-methods",
-      "nativewind/babel",
-      "react-native-reanimated/plugin"
+      "nativewind/babel"
     ],
+    plugins: [
+      "react-native-reanimated/plugin"
+    ]
   };
 };
