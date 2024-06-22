@@ -24,7 +24,9 @@ module.exports = function (api) {
           'os': 'os-browserify',
           'node:os': 'os-browserify',
           'path': 'path-browserify',
-          'node:path': 'path-browserify'
+          'node:path': 'path-browserify',
+          'process': 'react-native-process-shim',
+          'node:process': 'react-native-process-shim'
         }
       }],
       "react-native-reanimated/plugin"
