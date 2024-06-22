@@ -1,27 +1,30 @@
 {
   "name": "bilderbrett.app",
-  "main": "expo-router/entry",
   "version": "1.0.0",
   "scripts": {
-    "start": "bun run web",
-    "reset-project": "bun ./scripts/reset-project.js",
-    "android": "bun expo start --android",
-    "ios": "bun expo start --ios",
-    "web": "bun expo start --web",
-    "test": "bun jest --watchAll",
-    "lint": "bun expo lint"
+    "start": "bunx expo start",
+    "start:android": "bunx expo start --android",
+    "start:ios": "bunc expo start --ios",
+    "start:web": "bunx expo start --web",
+    "test": "bunx jest --watchAll",
+    "lint": "bunx expo lint",
+    "android": "expo run:android",
+    "ios": "expo run:ios"
   },
   "jest": {
     "preset": "jest-expo"
   },
   "dependencies": {
     "@expo/vector-icons": "^14.0.0",
+    "@radix-ui/react-progress": "^1.1.0",
+    "@radix-ui/react-tooltip": "^1.1.1",
     "@react-native-async-storage/async-storage": "1.23.1",
     "@react-navigation/native": "^6.0.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "expo": "^51.0.14",
     "expo-constants": "~16.0.2",
+    "expo-dev-client": "~4.0.18",
     "expo-font": "~12.0.7",
     "expo-linking": "~6.3.1",
     "expo-router": "^3.5.16",
@@ -41,8 +44,9 @@
     "react-native-svg": "15.2.0",
     "react-native-web": "~0.19.10",
     "tailwind-merge": "^2.3.0",
-    "tailwindcss": "^3.4.4",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss": "3.4.4",
+    "tailwindcss-animate": "^1.0.7",
+    "zustand": "^4.5.2"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

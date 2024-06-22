@@ -5,5 +5,10 @@
 expo-env.d.ts
 # @end expo-cli
 
+
+# Custom
+
 node_modules/
 package-lock.json
+ios/
+android/

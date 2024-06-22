@@ -1,5 +1,13 @@
-hidden = [".config", "bun.lockb"]
-modules = ["bun-1.1:v1-20240401-269b323"]
+run = "npm run start:web"
+
+hidden = [
+  "bun.lockb"
+]
+
+modules = [
+  "bun-1.1:v1-20240401-269b323",
+  "nodejs-20:v8-20230920-bd784b9"
+]
 
 [nix]
 channel = "stable-23_11"
@@ -7,3 +15,25 @@ channel = "stable-23_11"
 [[ports]]
 localPort = 8081
 externalPort = 80
+
+[env]
+PATH = "/home/runner/$REPL_SLUG/.config/npm/node_global/bin:/home/runner/$REPL_SLUG/node_modules/.bin"
+XDG_CONFIG_HOME = "/home/runner/.config"
+npm_config_prefix = "/home/runner/$REPL_SLUG/.config/npm/node_global"
+
+[gitHubImport]
+requiredFiles = [".replit", "replit.nix"]
+
+[packager]
+language = "bun"
+
+  [packager.features]
+  packageSearch = true
+  guessImports = true
+  enabledForHosting = false
+
+[languages.javascript]
+pattern = "**/{*.js,*.jsx,*.ts,*.tsx}"
+
+  [languages.javascript.languageServer]
+start = "./node_modules/.bin/typescript-language-server --stdio"
