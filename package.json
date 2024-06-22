@@ -16,11 +16,15 @@
     "preset": "jest-expo"
   },
   "dependencies": {
+    "@chainsafe/libp2p-gossipsub": "^13.0.0",
     "@expo/vector-icons": "^14.0.0",
+    "@orbitdb/core": "^2.2.0",
+    "@orbitdb/identity-provider-did": "^1.0.2",
     "@radix-ui/react-progress": "^1.1.0",
     "@radix-ui/react-tooltip": "^1.1.1",
     "@react-native-async-storage/async-storage": "1.23.1",
     "@react-navigation/native": "^6.0.2",
+    "blockstore-level": "^1.1.8",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "expo": "^51.0.14",
@@ -34,6 +38,7 @@
     "expo-status-bar": "~1.12.1",
     "expo-system-ui": "~3.0.6",
     "expo-web-browser": "~13.0.3",
+    "helia": "^4.2.4",
     "lucide-react-native": "^0.396.0",
     "nativewind": "^4.0.1",
     "react": "18.2.0",
