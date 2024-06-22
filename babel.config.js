@@ -6,7 +6,7 @@ module.exports = function (api) {
         "babel-preset-expo", 
         { jsxImportSource: "nativewind" }
       ],
-      "nativewind/babel".
+      "nativewind/babel",
       ['module-resolver', {
         alias: {
           'crypto': 'react-native-quick-crypto',
