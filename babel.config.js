@@ -27,6 +27,7 @@ module.exports = function (api) {
           'node:path': 'path-browserify',
           'process': 'react-native-process-shim',
           'node:process': 'react-native-process-shim',
+          
           'libp2p': 'libp2p/dist/index.min.js',
           '@libp2p/websockets': '@libp2p/websockets/dist/index.min.js',
           '@libp2p/bootstrap': '@libp2p/bootstrap/dist/index.min.js',
@@ -36,7 +37,7 @@ module.exports = function (api) {
           '@libp2p/circuit-relay-v2': '@libp2p/circuit-relay-v2/dist/index.min.js',
           '@libp2p/tcp': '@libp2p/tcp/dist/index.min.js',
           '@chainsafe/libp2p-noise': '@chainsafe/libp2p-noise/dist/index.min.js',
-          '@chainsafe/libp2p-yamux': '@chainsafe/libp2p-yam/dist/index.min.js',
+          '@chainsafe/libp2p-yamux': '@chainsafe/libp2p-yamux/dist/index.min.js',
         }
       }],
       "react-native-reanimated/plugin"
