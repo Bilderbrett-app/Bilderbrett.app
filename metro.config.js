@@ -6,10 +6,9 @@ const path = require('node:path');
 const config = getDefaultConfig(__dirname);
 
 config.resetCache = true;
-config.resolver = {
-  unstable_enablePackageExports: true,
-  unstable_enableSymlinks: true
-};
+config.resolver.unstable_enablePackageExports = true;
+config.resolver.unstable_enableSymlinks = true
+
 config.cacheStores = ({ FileStore }) => [
   new FileStore({
     root: path.join(os.homedir(), '.metro/cache'),
