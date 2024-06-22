@@ -21,7 +21,7 @@
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
   ],
-  exclude: [
+  "exclude": [
     "node_modules"
   ]
 }
