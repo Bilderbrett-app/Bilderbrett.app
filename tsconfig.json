@@ -6,6 +6,7 @@
     "resolvePackageJsonExports": true,
     "target": "ES2022",
     "strict": true,
+    "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "paths": {
@@ -19,5 +20,8 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
+  ],
+  exclude: [
+    "node_modules"
   ]
 }

@@ -28,7 +28,6 @@ module.exports = function (api) {
           'process': 'react-native-process-shim',
           'node:process': 'react-native-process-shim',
 
-          /*
           'libp2p': 'libp2p/dist/src',
           '@libp2p/websockets': '@libp2p/websockets/dist/src',
           '@libp2p/bootstrap': '@libp2p/bootstrap/dist/src',
@@ -48,8 +47,6 @@ module.exports = function (api) {
           '@chainsafe/libp2p-noise': '@chainsafe/libp2p-noise/dist/src',
           '@chainsafe/libp2p-yamux': '@chainsafe/libp2p-yamux/dist/src',
           '@chainsafe/libp2p-gossipsub': '@chainsafe/libp2p-gossipsub/dist/src',
-
-          */
         }
       }],
       "react-native-reanimated/plugin"
