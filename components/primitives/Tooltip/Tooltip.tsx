@@ -11,7 +11,7 @@ import {
   useControllableState,
   useRelativePosition,
   type LayoutPosition,
-} from '@/components/primitives/hooks';
+} from '@/components/primitives/Hooks';
 import { Portal as RNPPortal } from '@/components/primitives/Portal';
 import * as Slot from '@/components/primitives/Slot';
 import type {

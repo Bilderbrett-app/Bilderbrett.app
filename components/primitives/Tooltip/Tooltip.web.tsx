@@ -1,7 +1,7 @@
 import * as Tooltip from '@radix-ui/react-tooltip';
 import * as React from 'react';
 import { Pressable, View, type GestureResponderEvent } from 'react-native';
-import { useAugmentedRef, useControllableState } from '@/components/primitives/hooks';
+import { useAugmentedRef, useControllableState } from '@/components/primitives/Hooks';
 import * as Slot from '@/components/primitives/Slot';
 import type {
   PositionedContentProps,
