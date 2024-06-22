@@ -1,7 +1,7 @@
 {
   "name": "bilderbrett.app",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./index.js",
   "scripts": {
     "start": "bunx expo start",
     "start:android": "bunx expo start --android",
