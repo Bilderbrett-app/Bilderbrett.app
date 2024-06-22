@@ -34,10 +34,12 @@ module.exports = function (api) {
           '@libp2p/identify': '@libp2p/identify/dist/src',
           '@libp2p/webrtc': '@libp2p/webrtc/dist/src',
           '@libp2p/kad-dht': '@libp2p/kad-dht/dist/src',
+          '@libp2p/interface': '@libp2p/interface/dist/src',
           '@libp2p/circuit-relay-v2': '@libp2p/circuit-relay-v2/dist/src',
           '@libp2p/tcp': '@libp2p/tcp/dist/src',
           '@chainsafe/libp2p-noise': '@chainsafe/libp2p-noise/dist/src',
           '@chainsafe/libp2p-yamux': '@chainsafe/libp2p-yamux/dist/src',
+          '@chainsafe/libp2p-gossipsub': '@chainsafe/libp2p-gossipsub/dist/src',
         }
       }],
       "react-native-reanimated/plugin"
