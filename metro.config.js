@@ -9,4 +9,4 @@ const config = {
   }
 }
 
-module.exports = withNativeWind(Object.assign(defaultConfig, config), { input: './global.css' })
+module.exports = withNativeWind(config, { input: './global.css' })
