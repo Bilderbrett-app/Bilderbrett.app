@@ -52,6 +52,7 @@
     "react-dom": "18.2.0",
     "react-native": "0.74.2",
     "react-native-crypto": "^2.2.0",
+    "react-native-error-boundary": "^1.2.4",
     "react-native-gesture-handler": "~2.16.1",
     "react-native-get-random-values": "~1.11.0",
     "react-native-logs": "^5.1.0",
