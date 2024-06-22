@@ -8,7 +8,17 @@
       "extensions": [
         "msjsdiag.vscode-react-native",
         "oven.bun-vscode",
-        "expo.vscode-expo-tools"
+        "expo.vscode-expo-tools",
+        "usernamehw.errorlens",
+        "oderwat.indent-rainbow",
+        "IBM.output-colorizer",
+        "YoavBls.pretty-ts-errors",
+        "shardulm94.trailing-spaces",
+        "aaron-bond.better-comments",
+        "EditorConfig.EditorConfig",
+        "dbaeumer.vscode-eslint",
+        "ms-vscode-remote.remote-containers",
+        "ms-dotnettools.vscodeintellicode-csharp"
       ]
     }
   }
