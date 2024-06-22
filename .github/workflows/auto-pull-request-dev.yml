@@ -1,0 +1,26 @@
+name: Create Pull Request Dev
+
+on:
+  push:
+    branches:
+      - 'features/*'
+      - 'issues/*'
+      - 'hot-fixes/*'
+
+jobs:
+  create-pr:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        base: dev
+        branch: ${{ github.ref }}
+        title: 'Auto PR: Merging feature branch into dev'
+        body: |
+          This PR was automatically created by a GitHub Action to merge the feature branch into the dev branch.

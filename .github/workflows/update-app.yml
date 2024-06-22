@@ -1,5 +1,8 @@
-name: update
-on: push
+name: Update App
+on:
+  push:
+    branches:
+      - prod
 
 jobs:
   update:
@@ -28,6 +31,13 @@ jobs:
         with:
           eas-version: latest
           token: ${{ secrets.EXPO_TOKEN }}
+          packager: bun
+
+      - name: Navigate to app directory
+        run: cd ./app
+
+      - name: Navigate to project
+        run: cd packages/app
 
       - name: Navigate to project
         run: cd packages/app
@@ -36,4 +46,4 @@ jobs:
         run: bun install
 
       - name: Publish update
-        run: eas update --auto
+        run: bunx eas update --auto --non-interactive
