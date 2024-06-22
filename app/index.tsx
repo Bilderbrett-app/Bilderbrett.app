@@ -1,11 +1,14 @@
 import "@/global.shims"
 
 import * as React from 'react';
-import { View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+
+const Tab = createBottomTabNavigator();
 
 import HomeScreen from '@/screens/home';
 
-export default function Screen() {
+export default function App() {
   return (
    <NavigationContainer>
      <Tab.Navigator>
