@@ -36,6 +36,12 @@ jobs:
       - name: Navigate to app directory
         run: cd ./app
 
+      - name: Navigate to project
+        run: cd packages/app
+
+      - name: Navigate to project
+        run: cd packages/app
+
       - name: Install dependencies
         run: bun install
 
