@@ -580,5 +580,6 @@ expo-env.d.ts
 node_modules/
 ios/
 android/
+dist/
 
 package-lock.json
