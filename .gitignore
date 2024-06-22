@@ -581,5 +581,6 @@ node_modules/
 ios/
 android/
 dist/
+.expo/
 
 package-lock.json
