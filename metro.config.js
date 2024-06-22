@@ -11,6 +11,7 @@ config.resolver.unstable_enableSymlinks = true;
 config.resolver.unstable_conditionNames = [
   "browser",
   "require",
+  "export",
   "react-native"
 ]
 
