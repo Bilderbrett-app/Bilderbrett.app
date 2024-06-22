@@ -2,7 +2,7 @@ import * as React from 'react';
 import { View } from 'react-native';
 import Animated, { FadeInUp, FadeOutDown, LayoutAnimationConfig } from 'react-native-reanimated';
 import { Info } from '@/components/icons/Info';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/Avatar ';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/Avatar';
 import { Button } from '@/components/ui/Button';
 import {
   Card,
