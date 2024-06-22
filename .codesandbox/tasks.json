@@ -9,27 +9,19 @@
 
   // These tasks can be run from CodeSandbox. Running one will open a log in the app.
   "tasks": {
-    "start": {
-      "name": "Initialize",
-      "command": "bun run start",
-      "runAtStart": true,
-      "preview": {
-        "port": 8080
-      }
-    },
     "android": {
       "name": "Start Android",
-      "command": "bun run android",
+      "command": "bun run start:android",
       "runAtStart": false
     },
     "ios": {
       "name": "Start IOS",
-      "command": "bun run ios",
+      "command": "bun run start:ios",
       "runAtStart": false
     },
     "web": {
       "name": "Start Web",
-      "command": "bun run web",
+      "command": "bun run start:web",
       "runAtStart": false
     },
     "install": {
