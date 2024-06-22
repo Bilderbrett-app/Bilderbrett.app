@@ -3,7 +3,7 @@ run = "bun run start:web"
 hidden = [
   "bun.lockb"
 ]
-modules = ["nodejs-20", "web", "bash", "bun-1.1", "bun-1.0", "nix", "typescript-language-server"]
+modules = ["nodejs-20", "web", "bash", "bun-1.1", "nix", "typescript-language-server"]
 
 [nix]
 channel = "stable-23_11"
