@@ -2,13 +2,16 @@
   "name": "bilderbrett.app",
   "version": "1.0.0",
   "main": "expo-router/entry",
+  "type": "commonjs",
   "scripts": {
     "start": "bunx expo start",
     "test": "bunx jest --watchAll",
     "lint": "bunx expo lint",
     "android": "bunx expo run:android",
     "ios": "bunx expo run:ios",
-    "web": "bunx expo run:web"
+    "web": "bunx expo run:web",
+    "eject": "bunx expo reject",
+    "build": "bunx eas build"
   },
   "jest": {
     "preset": "jest-expo"
