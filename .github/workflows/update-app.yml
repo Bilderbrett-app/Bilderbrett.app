@@ -33,17 +33,12 @@ jobs:
           token: ${{ secrets.EXPO_TOKEN }}
           packager: bun
 
-      - name: Navigate to app directory
-        run: cd ./app
-
-      - name: Navigate to project
-        run: cd packages/app
-
-      - name: Navigate to project
-        run: cd packages/app
-
       - name: Install dependencies
-        run: bun install
+        run: |
+          cd packages/app
+          bun install
 
       - name: Publish update
-        run: bunx eas update --auto --non-interactive
+        run: |
+          cd packages/app
+          bunx eas update --auto --non-interactive
