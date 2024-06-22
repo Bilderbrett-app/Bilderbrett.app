@@ -6,7 +6,6 @@ import { SplashScreen, Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import * as React from 'react';
 import { Platform } from 'react-native';
-import ErrorBoundary from 'react-native-error-boundary'
 import { NAV_THEME } from '@/constants/Theme';
 import { useColorScheme } from '@/utils/useColorScheme';
 import { PortalHost } from '@/components/primitives/Portal';
@@ -58,7 +57,6 @@ export default function RootLayout() {
   }
 
   return (
-    <ErrorBoundary>
       <ThemeProvider value={isDarkColorScheme ? DARK_THEME : LIGHT_THEME}>
         <StatusBar style={isDarkColorScheme ? 'light' : 'dark'} />
         <Stack>
@@ -72,6 +70,5 @@ export default function RootLayout() {
         </Stack>
         <PortalHost />
       </ThemeProvider>
-    </ErrorBoundary>
   );
 }
