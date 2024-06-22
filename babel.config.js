@@ -6,10 +6,10 @@ module.exports = function (api) {
         "babel-preset-expo", 
         { jsxImportSource: "nativewind" }
       ],
-      "@babel/plugin-transform-private-methods",
       "nativewind/babel"
     ],
     plugins: [
+      "@babel/plugin-transform-private-methods",
       "react-native-reanimated/plugin"
     ]
   };
