@@ -1,4 +1,5 @@
 import "../global.css"
+import "@/global.shims"
 
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Theme, ThemeProvider } from '@react-navigation/native';
@@ -8,7 +9,6 @@ import * as React from 'react';
 import { Platform } from 'react-native';
 import { NAV_THEME } from '@/constants/Theme';
 import { useColorScheme } from '@/utils/useColorScheme';
-import { PortalHost } from '@/components/primitives/Portal';
 import { ThemeToggle } from '@/components/ThemeToggle';
 
 const LIGHT_THEME: Theme = {
