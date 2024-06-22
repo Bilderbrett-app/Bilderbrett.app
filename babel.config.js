@@ -9,7 +9,10 @@ module.exports = function (api) {
       "nativewind/babel"
     ],
     plugins: [
-      "@babel/plugin-transform-private-methods",
+      [
+        '@babel/plugin-transform-private-methods', 
+        { loose: true }
+      ],
       "react-native-reanimated/plugin"
     ]
   };
