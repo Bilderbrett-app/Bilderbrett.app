@@ -30,6 +30,11 @@ module.exports = function (api) {
           'libp2p': 'libp2p/dist/index.min.js',
           '@libp2p/websockets': '@libp2p/websockets/dist/index.min.js',
           '@libp2p/bootstrap': '@libp2p/bootstrap/dist/index.min.js',
+          '@libp2p/identify': '@libp2p/identify/dist/index.min.js',
+          '@libp2p/webrtc': '@libp2p/webrtc/dist/index.min.js',
+          '@libp2p/kad-dht': '@libp2p/kad-dht/dist/index.min.js',
+          '@libp2p/circuit-relay-v2': '@libp2p/circuit-relay-v2/dist/index.min.js',
+          '@libp2p/tcp': '@libp2p/tcp/dist/index.min.js',
           '@chainsafe/libp2p-noise': '@chainsafe/libp2p-noise/dist/index.min.js',
           '@chainsafe/libp2p-yamux': '@chainsafe/libp2p-yam/dist/index.min.js',
         }
