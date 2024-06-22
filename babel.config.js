@@ -7,6 +7,12 @@ module.exports = function (api) {
         { jsxImportSource: "nativewind" }
       ],
       "nativewind/babel",
+    ],
+    plugins: [
+      [
+        '@babel/plugin-transform-private-methods', 
+        { loose: true }
+      ],
       ['module-resolver', {
         alias: {
           'crypto': 'react-native-quick-crypto',
@@ -21,12 +27,6 @@ module.exports = function (api) {
           'node:path': 'path-browserify'
         }
       }],
-    ],
-    plugins: [
-      [
-        '@babel/plugin-transform-private-methods', 
-        { loose: true }
-      ],
       "react-native-reanimated/plugin"
     ]
   };
