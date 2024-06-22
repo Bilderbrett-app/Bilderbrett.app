@@ -1,15 +1,14 @@
 {
   "name": "bilderbrett.app",
   "version": "1.0.0",
+  "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "bunx expo start",
     "start:android": "bunx expo start --android",
-    "start:ios": "bunc expo start --ios",
+    "start:ios": "bunx expo start --ios",
     "start:web": "bunx expo start --web",
     "test": "bunx jest --watchAll",
-    "lint": "bunx expo lint",
-    "android": "expo run:android",
-    "ios": "expo run:ios"
+    "lint": "bunx expo lint"
   },
   "jest": {
     "preset": "jest-expo"
