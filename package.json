@@ -4,13 +4,11 @@
   "main": "expo-router/entry",
   "scripts": {
     "start": "bunx expo start",
-    "start:android": "bunx expo start --android",
-    "start:ios": "bunx expo start --ios",
-    "start:web": "bunx expo start --web",
     "test": "bunx jest --watchAll",
     "lint": "bunx expo lint",
-    "android": "expo run:android",
-    "ios": "expo run:ios"
+    "android": "bunx expo run:android",
+    "ios": "bunx expo run:ios",
+    "web": "bunx expo run:web"
   },
   "jest": {
     "preset": "jest-expo"

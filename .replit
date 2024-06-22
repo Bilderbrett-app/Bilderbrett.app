@@ -1,4 +1,4 @@
-run = "bun run start:web"
+run = "bun run web"
 
 hidden = [
   "bun.lockb"
