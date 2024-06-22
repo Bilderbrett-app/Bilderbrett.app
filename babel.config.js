@@ -9,7 +9,6 @@ module.exports = function (api) {
       "nativewind/babel",
     ],
     plugins: [
-      "expo-router/babel",
       [
         '@babel/plugin-transform-private-methods', 
         { loose: true }
