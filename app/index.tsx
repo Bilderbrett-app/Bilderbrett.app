@@ -3,7 +3,7 @@ import "@/global.shims"
 import * as React from 'react';
 import { View } from 'react-native';
 
-import HomeScreen from './screens/home';
+import HomeScreen from '@/screens/home';
 
 export default function Screen() {
   return (
