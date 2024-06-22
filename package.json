@@ -45,6 +45,7 @@
     "expo-system-ui": "~3.0.6",
     "expo-web-browser": "~13.0.3",
     "helia": "^4.2.4",
+    "libp2p": "^1.7.0",
     "lucide-react-native": "^0.396.0",
     "nativewind": "^4.0.1",
     "os-browserify": "^0.3.0",
