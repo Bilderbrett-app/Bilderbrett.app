@@ -17,6 +17,13 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-${{ matrix.bun }}-bun-
 
+      - uses: actions/cache@v4
+        with:
+          path: ~/.metro/cache
+          key: ${{ runner.os }}-${{ matrix.metro }}-metro-${{ hashFiles('**/bun.lockb') }}
+          restore-keys: |
+            ${{ runner.os }}-${{ matrix.metro }}-metro-
+
       - name: Check for EXPO_TOKEN
         run: |
           if [ -z "${{ secrets.EXPO_TOKEN }}" ]; then
