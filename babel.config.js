@@ -27,7 +27,8 @@ module.exports = function (api) {
           'node:path': 'path-browserify',
           'process': 'react-native-process-shim',
           'node:process': 'react-native-process-shim',
-          'libp2p': 'libp2p/dist/index.min.js'
+          'libp2p': 'libp2p/dist/index.min.js',
+          '@libp2p/websockets': '@libp2p/websockets/dist/index.min.js
         }
       }],
       "react-native-reanimated/plugin"
