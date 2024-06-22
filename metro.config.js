@@ -1,8 +1,10 @@
 const { getDefaultConfig } = require("expo/metro-config");
 const { withNativeWind } = require('nativewind/metro');
 
+const defaultConfig = getDefaultConfig(__dirname);
+console.log(defaultConfig);
+
 const config = {
-  ...getDefaultConfig(__dirname),
   resolver: {
     unstable_enablePackageExports: true,
   }
