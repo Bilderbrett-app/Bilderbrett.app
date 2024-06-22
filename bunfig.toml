@@ -1,0 +1,5 @@
+[install.cache]
+disable = true
+
+[install]
+auto = "auto"

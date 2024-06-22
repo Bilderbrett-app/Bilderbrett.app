@@ -8,12 +8,6 @@ const config = getDefaultConfig(__dirname);
 config.resetCache = true;
 config.resolver.unstable_enablePackageExports = true;
 config.resolver.unstable_enableSymlinks = true;
-config.resolver.unstable_conditionNames = [
-  "browser",
-  "require",
-  "exports",
-  "react-native"
-]
 
 config.cacheStores = ({ FileStore }) => [
   new FileStore({
