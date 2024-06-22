@@ -29,9 +29,6 @@ jobs:
           eas-version: latest
           token: ${{ secrets.EXPO_TOKEN }}
 
-      - name: Navigate to app package
-        run: cd packages/app
-      
       - name: Install dependencies
         run: bun install
 
