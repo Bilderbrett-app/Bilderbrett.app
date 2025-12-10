@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-background: 255 255 255;
+    --color-foreground: 10 10 10;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-background: 10 10 10;
+      --color-foreground: 240 240 240;
+    }
+  }
+}
+
+body {
+  background-color: rgb(var(--color-background));
+  color: rgb(var(--color-foreground));
+}

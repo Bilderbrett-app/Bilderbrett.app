@@ -1,0 +1,59 @@
+name: Deploy to IPFS
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build application
+        run: pnpm build
+
+      - name: Upload to IPFS
+        id: ipfs
+        uses: aquiladev/ipfs-action@v0.3.1-alpha
+        with:
+          path: ./packages/app/dist
+          service: pinata
+          pinataKey: ${{ secrets.PINATA_API_KEY }}
+          pinataSecret: ${{ secrets.PINATA_API_SECRET }}
+
+      - name: Update IPNS
+        if: success()
+        run: |
+          echo "CID: ${{ steps.ipfs.outputs.cid }}"
+          echo "IPFS URL: https://ipfs.io/ipfs/${{ steps.ipfs.outputs.cid }}"
+          echo "Gateway URL: https://gateway.pinata.cloud/ipfs/${{ steps.ipfs.outputs.cid }}"
+
+      - name: Create deployment summary
+        run: |
+          echo "## 🚀 Deployment Successful" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**CID:** \`${{ steps.ipfs.outputs.cid }}\`" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Access your app:**" >> $GITHUB_STEP_SUMMARY
+          echo "- [IPFS Gateway](https://ipfs.io/ipfs/${{ steps.ipfs.outputs.cid }})" >> $GITHUB_STEP_SUMMARY
+          echo "- [Pinata Gateway](https://gateway.pinata.cloud/ipfs/${{ steps.ipfs.outputs.cid }})" >> $GITHUB_STEP_SUMMARY
