@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '@/views/HomeView.vue'
+import FeedView from '@/views/FeedView.vue'
+import UploadView from '@/views/UploadView.vue'
+import ProfileView from '@/views/ProfileView.vue'
 import CreateGalleryView from '@/views/CreateGalleryView.vue'
 import GalleryView from '@/views/GalleryView.vue'
 
@@ -8,8 +10,18 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: HomeView,
+      name: 'feed',
+      component: FeedView,
+    },
+    {
+      path: '/upload',
+      name: 'upload',
+      component: UploadView,
+    },
+    {
+      path: '/profile',
+      name: 'profile',
+      component: ProfileView,
     },
     {
       path: '/galleries/new',
