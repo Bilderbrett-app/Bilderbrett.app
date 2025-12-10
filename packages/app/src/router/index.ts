@@ -4,6 +4,8 @@ import UploadView from '@/views/UploadView.vue'
 import ProfileView from '@/views/ProfileView.vue'
 import CreateGalleryView from '@/views/CreateGalleryView.vue'
 import GalleryView from '@/views/GalleryView.vue'
+import SearchView from '@/views/SearchView.vue'
+import LoginView from '@/views/LoginView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -12,6 +14,16 @@ const router = createRouter({
       path: '/',
       name: 'feed',
       component: FeedView,
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: LoginView,
+    },
+    {
+      path: '/search',
+      name: 'search',
+      component: SearchView,
     },
     {
       path: '/upload',
