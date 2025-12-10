@@ -1,0 +1,31 @@
+{
+  "name": "bilderbrett-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bilderbrett.app - Decentralized image gallery with IPFS and OrbitDB - Browser-only SPA",
+  "scripts": {
+    "dev": "pnpm --filter app dev",
+    "build": "pnpm -r build",
+    "preview": "pnpm --filter app preview",
+    "lint": "pnpm -r lint",
+    "type-check": "pnpm -r type-check",
+    "clean": "pnpm -r clean && rm -rf node_modules"
+  },
+  "keywords": [
+    "ipfs",
+    "orbitdb",
+    "vue3",
+    "p2p",
+    "decentralized",
+    "gallery",
+    "browser",
+    "spa"
+  ],
+  "author": "Bilderbrett.app",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@8.15.0"
+}
